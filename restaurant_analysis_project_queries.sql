@@ -36,19 +36,19 @@ FROM menu_items
 GROUP BY category;
 
 -- 5. View the order_details table. What is the date range of the table?
-(SELECT order_id, order_date, order_time, "First Order Date" AS order_date_range
+(SELECT order_id, order_date, order_time, "First Order Date" AS order_date_type
 FROM order_details
 ORDER BY order_date LIMIT 1)
 UNION
-(SELECT order_id, order_date, order_time, "Last Order Date" AS order_date_range
+(SELECT order_id, order_date, order_time, "Last Order Date" AS order_date_type
 FROM order_details
 ORDER BY order_date DESC LIMIT 1);
 
 -- 6. How many orders were made within this date range? How many items were ordered within this date range?
-SELECT COUNT(DISTINCT order_id)
+SELECT COUNT(DISTINCT order_id) AS number_of_orders
 FROM order_details;
 
-SELECT COUNT(*)
+SELECT COUNT(*) AS number_of_items
 FROM order_details;
 
 -- 7. Which orders had the most number of items?
