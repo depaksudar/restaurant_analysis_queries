@@ -1,0 +1,7 @@
+month_number,weekday_or_weekend,number_of_orders,percentage_of_orders
+1,Weekday,2911,70.04
+1,Weekend,1245,29.96
+2,Weekday,2787,71.61
+2,Weekend,1105,28.39
+3,Weekday,3142,75.06
+3,Weekend,1044,24.94
