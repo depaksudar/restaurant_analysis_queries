@@ -1,7 +1,7 @@
 USE restaurant_db;
 
 -- 1. View the menu_items table and write a query to find the number of items on the menu
-SELECT COUNT(*) AS total_number_of_items
+SELECT COUNT(*) AS number_of_items_on_menu
 FROM menu_items;
 
 -- 2. What are the least and most expensive items on the menu?
@@ -48,7 +48,7 @@ ORDER BY order_date DESC LIMIT 1);
 SELECT COUNT(DISTINCT order_id) AS number_of_orders
 FROM order_details;
 
-SELECT COUNT(*) AS number_of_items
+SELECT COUNT(*) AS number_of_records
 FROM order_details;
 
 -- 7. Which orders had the most number of items?
